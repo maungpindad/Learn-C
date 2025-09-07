@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: gcc build active file",
+            "type": "cppbuild",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compiler: /usr/bin/gcc"
+        }
+    ]
+}
