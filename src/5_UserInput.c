@@ -1,15 +1,29 @@
 #include <stdio.h>
+#include <string.h> // untuk strtok / menghapus newline
 
 int main()
 {
-    int binary;
-    printf("Insert binary number (0 and 1): ");
-    scanf("%d", &binary);
-    printf("You entered: %d\n", binary);
-    return 0;
+    printf("=====================================\n");
+    printf("     👋 Welcome to My Program! \n");
+    printf("=====================================\n\n");
 
     char name[50];
-    printf("Insert name");
-    scanf("%s", &name);
-    printf("You entered: %s\n", name);
+    printf("Enter your name : ");
+    fgets(name, sizeof(name), stdin);
+
+    // hapus newline dari fgets
+    name[strcspn(name, "\n")] = 0;
+
+    int age;
+    printf("Enter your age  : ");
+    scanf("%d", &age);
+
+    printf("\n=====================================\n");
+    printf("          🎉 RESULT 🎉 \n");
+    printf("=====================================\n");
+    printf("Hello, %s!\n", name);
+    printf("You are %d years old.\n", age);
+    printf("=====================================\n");
+
+    return 0;
 }
