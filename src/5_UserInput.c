@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h> // untuk strtok / menghapus newline
+#include <string.h>
 
 int main()
 {
@@ -11,8 +11,8 @@ int main()
     printf("Enter your name : ");
     fgets(name, sizeof(name), stdin);
 
-    // hapus newline dari fgets
-    name[strcspn(name, "\n")] = 0;
+    // delete new line from fgets
+    name[strcspn(name, "\n")] = '\0';
 
     int age;
     printf("Enter your age  : ");

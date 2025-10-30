@@ -26,7 +26,7 @@ int main()
 
     printf("%3d\n", num1);  // %3 is minimum character to print
     printf("%-3d\n", num2); // %-3 is for left justify the print
-    printf("%03d\n", num3); // %03 is for 0 rather than spaces
+    printf("%03d\n", num3); // %03 is for show 0 rather than spaces
     printf("%+d\n", num4);  // %+ is for print with + sign
 
     // Display behavior

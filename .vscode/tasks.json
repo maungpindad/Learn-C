@@ -10,7 +10,8 @@
                 "-Wall",
                 "${file}",
                 "-o",
-                "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+                "${workspaceFolder}/bin/${fileBasenameNoExtension}",
+                "-lm"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
