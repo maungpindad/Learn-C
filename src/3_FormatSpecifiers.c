@@ -1,4 +1,5 @@
-#include <stdio.h>
+// Format specifiers are special characters used in formatted input and output functions
+// to specify the type of data being processed. They are commonly used in functions like printf and scanf
 #include <stdbool.h>
 
 int main()

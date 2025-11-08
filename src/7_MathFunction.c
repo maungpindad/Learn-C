@@ -1,9 +1,11 @@
+// Math functions is a set of functions provided by the C standard library to perform mathematical operations.
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 
-// Definisi M_PI ditambahkan untuk portabilitas
-// Ini mendefinisikan M_PI hanya jika belum didefinisikan oleh <math.h>
+// Definition of is M_PI added for portability
+// This defines M_PI only if not define by <math.h>
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
@@ -81,7 +83,7 @@ int main()
     printf("Enter the absolute integer number : ");
     scanf("%d", &number6);
 
-    int result7 = abs(number6); // <-- Fungsi ini ada di <stdlib.h>
+    int result7 = abs(number6);
     printf("The absolute of %d is : %d\n", number6, result7);
 
     // Logarithm / logaritma

@@ -1,3 +1,5 @@
+// Arithmetic operators include addition, subtraction, multiplication, division, modulus, increment, decrement, and augmented assignment.
+
 #include <stdio.h>
 
 int main()

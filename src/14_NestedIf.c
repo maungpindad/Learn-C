@@ -1,3 +1,5 @@
+// Nested if statements are used to check multiple conditions in a hierarchical manner.
+
 #include <stdio.h>
 
 int main()

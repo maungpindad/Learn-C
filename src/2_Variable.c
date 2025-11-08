@@ -1,3 +1,5 @@
+// Variable is a named storage that our programs can manipulate.
+
 #include <stdio.h>
 #include <stdbool.h>
 

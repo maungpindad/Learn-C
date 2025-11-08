@@ -1,6 +1,8 @@
+// If is a conditional statement that executes a block of code if a specified condition is true.
+
 #include <stdio.h>
 #include <stdbool.h>
-#include <string.h> // <-- 1. DIPERLUKAN: Untuk fungsi strcspn()
+#include <string.h> // for strcspn()
 
 int main()
 {
@@ -27,7 +29,7 @@ int main()
     char grade;
 
     printf("Enter your grade : ");
-    scanf(" %c", &grade); // Spasi di depan "%c" sudah benar
+    scanf(" %c", &grade); // space before %c to consume any leftover whitespace on char variables
 
     if (grade == 'a')
     {
@@ -60,8 +62,8 @@ int main()
         printf("Keep trying!\n");
     }
 
-    // "Eat" any remaining newline characters (\n) in the buffer
-    // from the previous 'scanf' before using 'fgets'
+    // "Eat" any remaining newline characters (\n) in the buffer from the previous 'scanf'
+    // This is only necessary when switching from 'scanf' to 'fgets'
     getchar();
 
     char name[50];

@@ -1,3 +1,5 @@
+// Switch statements are used to select one of many code blocks to be executed.
+
 #include <stdio.h>
 
 int main()

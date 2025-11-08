@@ -1,3 +1,6 @@
+// Logical Operators is used to combine multiple conditions/expressions.
+// There are three logical operators in C:
+
 #include <stdio.h>
 #include <stdbool.h>
 

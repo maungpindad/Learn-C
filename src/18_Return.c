@@ -12,14 +12,14 @@ int calculateArea(int length, int width)
 
     // 'return' sends the value 'area' back to whoever
     // called this function.
-    // Can also return directly like: return length * width;
+    // Can also like: return length * width;
     return area;
 }
 
 /**
  * EXAMPLE 2: if-return (Logic Checking)
- * Fungsi ini 'berjanji' returns 'bool' (true atau false).
- * Ini adalah pola 'Early Return' atau 'Early Exit'.
+ * This function 'promises' to return a 'bool' (true or false).
+ * This is an 'Early Return' or 'Early Exit' pattern.
  */
 bool isLegalAge(int age)
 {
@@ -32,29 +32,29 @@ bool isLegalAge(int age)
         return true;
     }
 
-    // This line will ONLY execute if 'if' above 'false'
+    // This line will ONLY execute if the 'if' above is 'false'
     // (if the age is below 17).
     return false;
 }
 
 /**
  * EXAMPLE 3: if-return (Preventing Errors / Guard Clause)
- * Fungsi ini 'berjanji' returns 'float'.
+ * This function 'promises' to return a 'float'.
  * We use 'if' to PREVENT division-by-zero errors.
  */
 float divide(float a, float b)
 {
-    // Ini disebut "Guard Clause" (Guard Clause)
+    // This is called a "Guard Clause"
     // We check the error condition early.
     if (b == 0)
     {
         printf("Error: Cannot divide by zero!\n");
-        // Kita keluar lebih awal dan returns nilai 'aman'
+        // We exit early and return a 'safe' value
         return 0.0;
     }
 
     // This code is guaranteed safe and ONLY runs
-    // jika 'if' above 'false'.
+    // if the 'if' above is 'false'.
     float result = a / b;
     return result;
 }
@@ -65,36 +65,36 @@ int main()
     // --- Using calculateArea ---
     // We 'capture' the value returned by the function
     // into the 'area' variable.
-    int luas = calculateArea(10, 5);
-    printf("The area of the rectangle is: %d\n", luas);
+    int area_result = calculateArea(10, 5);
+    printf("The area of the rectangle is: %d\n", area_result);
 
     // We can also use it directly
-    printf("Another area (7x3) adalah: %d\n", calculateArea(7, 3));
+    printf("Another area (7x3) is: %d\n", calculateArea(7, 3));
 
     printf("\n--- Example of if-return ---\n");
     // --- Using isLegalAge ---
-    int umurBudi = 20;
+    int budi_age = 20;
 
-    // Nilai 'true' atau 'false' dari isLegalAge
-    // langsung dipakai oleh 'if' di main.
-    if (isLegalAge(umurBudi)) // isLegalAge(20) akan 'return true'
+    // The 'true' or 'false' value from isLegalAge
+    // is directly used by 'if' in main.
+    if (isLegalAge(budi_age)) // isLegalAge(20) will 'return true'
     {
-        printf("Budi (umur %d) boleh membuat KTP.\n", umurBudi);
+        printf("Budi (age %d) is allowed to get an ID card.\n", budi_age);
     }
 
-    int umurAna = 15;
-    if (!isLegalAge(umurAna)) // isLegalAge(15) akan 'return false'
+    int ana_age = 15;
+    if (!isLegalAge(ana_age)) // isLegalAge(15) will 'return false'
     {
-        printf("Ana (umur %d) belum boleh membuat KTP.\n", umurAna);
+        printf("Ana (age %d) is not allowed to get an ID card yet.\n", ana_age);
     }
 
-    printf("\n--- Contoh Guard Clause ---\n");
+    printf("\n--- Example of Guard Clause ---\n");
     // --- Using divide ---
-    float hasil1 = divide(10, 2); // Ini akan berjalan normal
-    printf("Hasil 10 / 2 = %.1f\n", hasil1);
+    float result1 = divide(10, 2); // This will run normally
+    printf("Result 10 / 2 = %.1f\n", result1);
 
-    float hasil2 = divide(10, 0);            // Ini akan memicu 'if' di dalam fungsi
-    printf("Hasil 10 / 0 = %.1f\n", hasil2); // Akan mencetak nilai 'aman' (0.0)
+    float result2 = divide(10, 0);             // This will trigger the 'if' inside the function
+    printf("Result 10 / 0 = %.1f\n", result2); // Will print the 'safe' value (0.0)
 
     return 0;
 }

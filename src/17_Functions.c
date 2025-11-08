@@ -1,3 +1,6 @@
+// Functions is a block of code that can be used repeatedly without rewriting it.
+// Functions can also accept parameters to make them more flexible.
+
 #include <stdio.h>
 #include <string.h>
 
