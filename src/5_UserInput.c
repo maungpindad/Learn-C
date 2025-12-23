@@ -5,10 +5,6 @@
 
 int main()
 {
-    printf("=====================================\n");
-    printf("     👋 Welcome to the Input Lesson! \n");
-    printf("=====================================\n\n");
-
     // -----------------------------------------------------------------
     // LESSON 1: scanf() followed by fgets()
     // THIS IS THE MOST COMMON BUG SCENARIO
